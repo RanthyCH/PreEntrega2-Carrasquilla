@@ -1,0 +1,388 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: 300;
+}
+
+/*Estilos globales*/
+body{
+    background-image: url(../img/index/hd/bg-large.jpg);
+    background-size: contain;
+    background-size: 160%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/*Estilos del Header*/
+   /*Menu de navegación*/
+   header nav a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+   }
+   .bg-transparent a{
+    color: white;
+   }
+   .bg-transparent a:hover{
+    color: rgb(0, 255, 136);
+    text-decoration: underline;
+    text-underline-offset: -30px;
+   }
+   .navbar-toggler{
+    filter: invert(1);
+    background-color: rgba(255, 255, 255, 0.363);
+    border-color: black;
+   }
+   header nav{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;
+   }
+   .logo{
+    display: flex;
+   }
+   header nav ul{
+    height: 5rem;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px;
+   }
+   header nav ul li{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+   }
+   header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   }
+   header nav ul li a:active{
+    color: rgb(0, 255, 115);
+   }
+   header nav ul li a:hover{
+    color: rgb(0, 190, 79);
+   }
+   header nav ul li a{
+    transition: 200ms ease-in-out;
+   }
+   header nav a div img{
+    height: 60px;
+    align-self: center;
+    padding-bottom: 8px;
+   }
+   header nav a div h1{
+    color: white;
+    padding-left: 1rem;
+    align-self: center;
+    font-size: 2rem;
+   }
+   header nav h1{
+    font-weight: 100;
+   }
+   #botonAgrandadoNav{
+    font-size: 1.45rem;
+    padding-bottom: 0.6rem;
+   }
+
+
+   
+/*Estilos del main*/
+h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+h3{
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+    height: 25rem;
+}
+#nombre:hover{
+    transform: scale(1.1);
+}
+#nombre{
+    transition: 125ms ease-in-out;
+    text-align: center;
+}
+
+
+/*Estilos de section*/
+section{
+    background: linear-gradient(45deg, rgba(37, 0, 11, 0.842) 40%, rgba(0, 23, 39, 0.438) 60%, rgba(0, 68, 35, 0.315) 90%);
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.308);
+}
+section h4{
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.911);
+    padding-top: 1.3rem;
+}
+section h5{
+    font-weight:400;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.897);
+}
+.parrafosSection{
+    color: rgba(255, 255, 255, 0.801);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    text-align: justify;
+    font-size: 1.25rem;
+}
+    /*Estilos de section para el html de la biografía*/
+    .divColumnas{
+        align-content: center;
+    }
+    .biografiaSection{
+        display: flex;
+        justify-content: center;
+    }
+.divBorrarMargen{
+    width: 100%;
+    justify-content: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+    /*Estilos de section para el html de la Guitarra*/   
+    
+    
+    /*Media Querys mal usadas*/
+
+    /*.parte1sectionGuitarra{
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .parte2sectionGuitarra{
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagen1guitarra{
+        width: 92.5%;
+        border-radius: 0.6rem;
+        transition: 200ms ease-in-out;
+    }
+    #imagen1guitarra:hover{
+        transform: scale(104%);
+        filter: brightness(1.25);
+    }
+
+    #imagen2guitarra{
+        width: 92.5%;
+        border-radius: 0.6rem;
+        transition: 200ms ease-in-out;
+    }
+    #imagen2guitarra:hover{
+        transform: scale(104%);
+        filter: invert(1);
+    }*/
+    /*section guitarra*/
+    .contenedorImagenes-Parrafos{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .divImagenesGuitarra{
+        padding-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    #parte2guitarra{
+        padding-bottom: 4rem;
+        padding-top: 2.5rem;
+    }
+
+    #imagen1guitarra{
+        width: 92.5%;
+        border-radius: 0.6rem;
+        transition: 200ms ease-in-out;
+    }
+    #imagen1guitarra:hover{
+        transform: scale(104%);
+        filter: brightness(1.25);
+    }
+
+    #imagen2guitarra{
+        width: 92.5%;
+        border-radius: 0.6rem;
+        transition: 200ms ease-in-out;
+    }
+    #imagen2guitarra:hover{
+        transform: scale(104%);
+        filter: invert(1);
+    }
+
+    .parte1sectionGuitarra{
+        padding-top: 5rem;
+    }
+    .parte2sectionGuitarra{
+        margin-top: 4rem;
+    }
+
+/*Estilos del footer*/
+footer{
+    height: 3.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.295);
+    color: rgba(255, 255, 255, 0.856);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    padding-top: 5px;
+}
+footer h6{
+    color: rgba(255, 255, 255, 0.897);
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+footer ul{
+    display: flex;
+    gap: 10rem;
+    padding-top: 10px;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.274);
+}
+
+
+/* MQ */
+
+
+  /*celulares*/
+  @media (max-width: 576px){
+    /*body*/
+    body{
+        background-color: black;
+        background-position: top;
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+
+    /*Header*/
+    header{
+        padding-top: 1rem;
+    }
+      
+
+    /*main*/
+    main{
+        transform: scale(0.75);
+        height: 20rem;
+    }
+
+    /*section*/
+    #h5{
+        display: flex;
+        justify-content: center;
+    }
+    section h5{
+        text-align: center;
+    }
+    .biografiaSection{
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Footer*/
+    footer ul li{
+        display: none;
+    }
+    footer{
+        justify-content: center;
+    }
+    footer h6{
+        color: #ffffffa2;
+    }
+  }
+  
+  /*Pantallas extra grandes*/
+  @media (min-width: 1400px){
+    body{
+        background-position: top;
+        background-size: 170%;
+    }
+  }
+
+
+  /*tablets*/
+  @media (max-width: 992px){
+    /*Navegación*/
+    header nav ul li{
+        padding-left: 2.5rem;
+      }
+      header nav ul{
+        padding-bottom: 2.85rem;
+      }
+    header{
+        padding-top: 1rem;
+    }
+    body{
+        background-position-x: -10rem;
+    }
+
+    .parrafosSection{
+        padding-left: 1.5rem;
+        padding-right: 1.75rem;
+    }
+  }
+
+
+  @media (min-width: 992px){
+    .divColumnas{
+        width: 32.5%;
+    }
+    .divH5{
+        width: 97.5%;
+    }
+    .parte1sectionGuitarra{
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0rem;
+    }
+    .parte2sectionGuitarra{
+        display: grid;
+        grid-template-columns: 48.5% 48.5%;
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0rem;
+    }
+    .divImagen1guitarra{
+        padding-top: 5vh;
+    }
+    .divImagen2guitarra{
+        padding-top: 1.75vh;
+    }
+  }
